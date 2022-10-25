@@ -1,3 +1,5 @@
+package introducao.poo;
+
 public class Moto extends Veiculo{
 
 

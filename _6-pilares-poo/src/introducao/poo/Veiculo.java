@@ -1,3 +1,5 @@
+package introducao.poo;
+
 public abstract class Veiculo {
 
     private String placa;

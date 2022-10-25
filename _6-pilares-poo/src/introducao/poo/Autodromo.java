@@ -1,3 +1,5 @@
+package introducao.poo;
+
 public class Autodromo {
 
     public static void main(String[] args){

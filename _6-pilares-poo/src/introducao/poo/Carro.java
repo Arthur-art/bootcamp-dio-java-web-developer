@@ -1,3 +1,5 @@
+package introducao.poo;
+
 public class Carro extends Veiculo{
 
     String modelo;
@@ -12,7 +14,7 @@ public class Carro extends Veiculo{
     public void ligar(){
         confereCambio();
         confereCombustivel();
-        System.out.println("Carro ligado.");
+        System.out.println("cars.models.Carro ligado.");
     }
 
     private void confereCombustivel(){
