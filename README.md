@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/54858003/197652339-7bca38b2-b12b-461c-99f5-9561eda7c85d.png)
+
+
 # Documentação do projeto
 
 - Link para a documentação do curso: [Java Básico - Java Básico (gitbook.io)](https://glysns.gitbook.io/java-basico/)
