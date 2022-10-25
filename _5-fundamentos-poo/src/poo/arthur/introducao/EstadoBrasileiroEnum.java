@@ -1,7 +1,7 @@
-package enums.arthur.introducao;
+package poo.arthur.introducao;
 
 
-public enum EstadoBrasileiro {
+public enum EstadoBrasileiroEnum {
     SAO_PAULO ("SP","São Paulo"),
     RIO_JANEIRO ("RJ", "Rio de Janeiro"),
     PIAUI ("PI", "Piauí"),
@@ -10,7 +10,7 @@ public enum EstadoBrasileiro {
     private String nome;
     private String sigla;
 
-    private EstadoBrasileiro(String sigla, String nome) {
+    private EstadoBrasileiroEnum(String sigla, String nome) {
         this.sigla = sigla;
         this.nome = nome;
     }
