@@ -4,8 +4,8 @@ public class Elemento<TIPO> {
     private TIPO valor;
     private Elemento<TIPO> proximo;
 
-    public Elemento(TIPO novoElemento){
-        this.valor = novoElemento;
+    public Elemento(TIPO novovalor){
+        this.valor = novovalor;
     }
 
     public TIPO getValor() {
