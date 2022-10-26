@@ -1,4 +1,4 @@
-package ListaLigada;
+package MyListaLigada;
 
 public class Elemento<TIPO> {
     private TIPO valor;

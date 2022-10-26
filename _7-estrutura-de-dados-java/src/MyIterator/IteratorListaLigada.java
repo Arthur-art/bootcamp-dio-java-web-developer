@@ -1,6 +1,6 @@
-package Iterator;
+package MyIterator;
 
-import ListaLigada.Elemento;
+import MyListaLigada.Elemento;
 
 public class IteratorListaLigada<TIPO> {
     private Elemento<TIPO> elemento;

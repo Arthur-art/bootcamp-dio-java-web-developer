@@ -1,4 +1,4 @@
-package ListaLigada;
+package MyListaLigada;
 
 public class ProgramaInteiros {
     public static void main(String[] args) {

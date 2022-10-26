@@ -1,6 +1,6 @@
-package ListaLigada;
+package MyListaLigada;
 
-import Iterator.IteratorListaLigada;
+import MyIterator.IteratorListaLigada;
 
 import java.util.ArrayList;
 

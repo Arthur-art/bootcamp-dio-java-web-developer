@@ -1,3 +1,5 @@
+package MyListaLigada;
+
 import java.util.Scanner;
 
 public class VetorSimples {

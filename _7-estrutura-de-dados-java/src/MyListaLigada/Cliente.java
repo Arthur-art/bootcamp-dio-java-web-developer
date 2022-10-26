@@ -1,4 +1,4 @@
-package ListaLigada;
+package MyListaLigada;
 
 public class Cliente {
     private String cpf;
