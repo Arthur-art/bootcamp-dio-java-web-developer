@@ -1,8 +1,10 @@
 package ListaLigada;
 
+import Iterator.IteratorListaLigada;
+
 import java.util.ArrayList;
 
-public class Comparacao {
+public class ComparacaoListvsVetor {
     public static void main(String[] args) {
 
         ListaLigada<Integer> lista = new ListaLigada<Integer>();
@@ -50,8 +52,9 @@ public class Comparacao {
         // *** Lista ***
 
         timeInicial = System.currentTimeMillis();
-        for (int i=0;i<lista.getTamanho(); i++){
-            lista.getPosicao(i);
+        IteratorListaLigada<Integer> iterator = lista.getIterator();
+        while(iterator.temProximo()){
+            iterator.getProximo();
         }
         timeFinal = System.currentTimeMillis();
         System.out.println("Tempo parar ler um lista de "+limite+" elementos");

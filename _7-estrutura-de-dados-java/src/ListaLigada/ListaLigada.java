@@ -1,5 +1,7 @@
 package ListaLigada;
 
+import Iterator.IteratorListaLigada;
+
 public class ListaLigada<TIPO> {
 
     private Elemento<TIPO> primeiro;
@@ -82,5 +84,9 @@ public class ListaLigada<TIPO> {
             }
         }
         return atual;
+    }
+
+    public IteratorListaLigada<TIPO> getIterator(){
+        return new IteratorListaLigada<TIPO>(this.primeiro);
     }
 }
