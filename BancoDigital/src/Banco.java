@@ -6,14 +6,10 @@ public class Banco {
     private String nome;
     private List<Conta> contas;
 
-    public void getContas() {
+    public String getContas() {
         System.out.println("*** Contas no Banco: "+nome);
-       contas.forEach(item->{
-           System.out.println("Cliente: "+item.cliente.getNome());
-           System.out.println("Agencia: "+item.agencia);
-           System.out.println("Numero da conta: "+item.numero);
-           System.out.println(String.format("Saldo: %.2f",item.saldo));
-       });
+
+       return contas.toString();
     }
 
     public void setContas(List<Conta> contas) {
@@ -26,5 +22,13 @@ public class Banco {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    @Override
+    public String toString() {
+        return "Banco{" +
+                "nome='" + nome + '\'' +
+                ", contas=" + contas +
+                '}';
     }
 }

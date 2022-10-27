@@ -25,12 +25,9 @@ public class Main {
         nubank.setNome("Nubank");
         nubank.setContas(contas);
 
-
         contaCorrenteArthur.depositar(115000);
         contaCorrenteArthur.transferir(10000,contaCorrenteSuellen);
-        contaCorrenteArthur.imprimirExtrato();
-        contaCorrenteSuellen.imprimirExtrato();
-        nubank.getContas();
+        System.out.println(nubank);
 
 
     }
