@@ -2,7 +2,7 @@ package List;
 
 import java.util.*;
 
-public class ExemploList {
+public class MethodsList {
     public static void main(String[] args) {
 
         ArrayList<Integer> notas = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7));
