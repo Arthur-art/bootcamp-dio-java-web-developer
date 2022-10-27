@@ -11,3 +11,10 @@
 - Instalando o IntelliJ
   - https://www.jetbrains.com/pt-br/idea/
   - Após instalar o IntelliJ, crie um novo projeto.
+
+## 2 - Extensões do Intellij
+- Atom
+- Git tool box
+- Key promoter
+- One dark theme
+- Rainbow Brackets
