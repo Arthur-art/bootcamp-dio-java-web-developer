@@ -24,6 +24,10 @@
 - No caminhdo da pasta GradleCourse\Aula1\01-Testing_Gradlew, digitar no terminal power shel: ./gradlew
 - Verificando version: ./gradlew -version
 
+## 4 - Instalando o Gradle nativamente
+- https://gradle.org/install/
+- https://giordanolins.com/instalando-e-configurando-o-gradle-no-windows/
+
 ## 4 - Trabalhando com Junit - Testes unitarios
 - Pesquisar por Junit Jupiter Engine no MVN repository 
   - Link: https://mvnrepository.com/
