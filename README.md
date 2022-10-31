@@ -18,3 +18,20 @@
 - Key promoter
 - Dracula theme 
 - Rainbow Brackets
+
+## 3 - Projetos Java com Gradle
+- Instalando o Gradle na maquina
+- No caminhdo da pasta GradleCourse\Aula1\01-Testing_Gradlew, digitar no terminal power shel: ./gradlew
+- Verificando version: ./gradlew -version
+
+## 4 - Trabalhando com Junit - Testes unitarios
+- Pesquisar por Junit Jupiter Engine no MVN repository 
+  - Link: https://mvnrepository.com/
+- Configuração Gradle:
+```js
+// https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine
+testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.8.2'
+
+```
+- Na pasta lib - build.gradle, adicionar a dependencia.
+
