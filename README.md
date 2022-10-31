@@ -16,5 +16,5 @@
 - Atom
 - Git tool box
 - Key promoter
-- One dark theme
+- Dracula theme 
 - Rainbow Brackets
