@@ -1,31 +1,45 @@
+import br.com.dio.desafio.dominio.Bootcamp;
 import br.com.dio.desafio.dominio.Curso;
+import br.com.dio.desafio.dominio.Dev;
 import br.com.dio.desafio.dominio.Mentoria;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 
-        Curso curso1 = new Curso();
-        curso1.setTitulo("Java developer");
-        curso1.setDescricao("Descricao curso java");
-        curso1.setCargaHoraria(72);
+        Dev arthur = new Dev();
+        arthur.setNome("Arthur");
 
-        Curso curso2 = new Curso();
-        curso1.setTitulo("JavaScript developer");
-        curso1.setDescricao("Descricao curso javascript");
-        curso1.setCargaHoraria(82);
+        Curso javaCurso = new Curso();
+        javaCurso.setTitulo("Java developer");
+        javaCurso.setDescricao("Descricao curso java");
+        javaCurso.setCargaHoraria(72);
 
-        Mentoria mentoria1 = new Mentoria();
-        mentoria1.setTitulo("Mentoria Java");
-        mentoria1.setDescricao("Descricao mentoria java");
-        mentoria1.setDate(LocalDate.now());
+        Curso javaScriptCurso = new Curso();
+        javaScriptCurso.setTitulo("JavaScript developer");
+        javaScriptCurso.setDescricao("Descricao curso javascript");
+        javaScriptCurso.setCargaHoraria(82);
 
-        Mentoria mentoria2 = new Mentoria();
-        mentoria1.setTitulo("Mentoria JavaScript");
-        mentoria1.setDescricao("Descricao mentoria javascript");
-        mentoria1.setDate(LocalDate.now());
+        Mentoria mentoriaJs = new Mentoria();
+        mentoriaJs.setTitulo("Mentoria JavaScript");
+        mentoriaJs.setDescricao("Descricao mentoria javascript");
+        mentoriaJs.setDate(LocalDate.now());
 
-        System.out.println(curso1);
+        Bootcamp bootcampFullStack = new Bootcamp();
+        bootcampFullStack.setNome("Bootcamp FullStack Developer");
+        bootcampFullStack.setDescricao("Descricao bootcamp java developer");
+        bootcampFullStack.getConteudos().add(javaCurso);
+        bootcampFullStack.getConteudos().add(mentoriaJs);
+        bootcampFullStack.getDevsInscritos().add(arthur);
+
+        arthur.inscreverBootcamp(bootcampFullStack);
+        arthur.progredir();
+
+        System.out.println(arthur.getConteudosConcluidos());
+        System.out.println(arthur.calcularTotalXp());
     }
 }
