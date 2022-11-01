@@ -1,4 +1,4 @@
-package springboot._10springbootintroducao;
+package springboot.springbootintroducao;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

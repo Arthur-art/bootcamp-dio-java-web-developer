@@ -1,6 +1,5 @@
-package springboot._10springbootintroducao;
+package springboot._11springbootiocdibeansautowired;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -9,7 +8,6 @@ class ApplicationTests {
 
 	@Test
 	void contextLoads() {
-		Assertions.assertEquals(10, 5+5);
 	}
 
 }

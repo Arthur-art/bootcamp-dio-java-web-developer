@@ -1,4 +1,4 @@
-package springboot._10springbootintroducao;
+package springboot.springbootintroducao;
 
 import org.springframework.stereotype.Component;
 
