@@ -20,7 +20,19 @@ public class Pessoa {
         return nascimento;
     }
 
+    public boolean ehMaiorIdade(){
+        return getIdade() >= 18;
+    }
+
     public int getIdade(){
         return (int) ChronoUnit.YEARS.between(this.nascimento, LocalDate.now());
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", nascimento=" + nascimento +
+                '}';
     }
 }

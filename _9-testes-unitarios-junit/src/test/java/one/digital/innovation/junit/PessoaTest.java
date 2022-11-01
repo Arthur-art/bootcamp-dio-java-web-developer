@@ -11,4 +11,9 @@ public class PessoaTest {
         Pessoa pessoa = new Pessoa("Arthur", LocalDate.of(1996,8,1));
         Assertions.assertEquals(26,pessoa.getIdade());
     }
+    @Test
+    void validarMaiorIdade(){
+        Pessoa pessoa = new Pessoa("Arthur", LocalDate.of(1996,8,1));
+        Assertions.assertTrue(pessoa.ehMaiorIdade());
+    }
 }
