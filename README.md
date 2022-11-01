@@ -50,5 +50,11 @@ testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', ver
 ![image](https://user-images.githubusercontent.com/54858003/199283476-41a884aa-b637-4e6c-ae43-0c9020e02cc1.png)
 ![image](https://user-images.githubusercontent.com/54858003/199283843-509569ef-ac7e-42a2-b8be-1a8066991976.png)
 
+## Introducao ao spring jpa
+- Doc: https://glysns.gitbook.io/spring-framework/spring-data-jpa/intro
+
+![image](https://user-images.githubusercontent.com/54858003/199345144-1ab74329-f797-4abc-97a4-7f8840d63e56.png)
+
+
 
 
