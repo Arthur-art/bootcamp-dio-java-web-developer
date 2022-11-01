@@ -17,7 +17,7 @@ public class Application {
 	@Bean
 	public CommandLineRunner run(ConversorJson conversorJson) throws Exception{
 		return args -> {
-			String json = "{\"cep\": \"01001-000\",\"logradouro\":\"Praça da Se\",\"localidade\"}";
+			String json ="{\"cep\": \"01001-000\",\"logradouro\": \"Praça da Sé\",\"localidade\": \"São Paulo\"}";
 			ViaCepResponse response = conversorJson.converter(json);
 			System.out.println("Dados do CEP: "+response);
 		};

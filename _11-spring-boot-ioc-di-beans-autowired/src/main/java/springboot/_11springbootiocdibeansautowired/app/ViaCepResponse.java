@@ -29,4 +29,13 @@ public class ViaCepResponse {
     public void setLocalidade(String localidade) {
         this.localidade = localidade;
     }
+
+    @Override
+    public String toString() {
+        return "ViaCepResponse{" +
+                "cep='" + cep + '\'' +
+                ", logradouro='" + logradouro + '\'' +
+                ", localidade='" + localidade + '\'' +
+                '}';
+    }
 }
