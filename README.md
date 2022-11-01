@@ -40,5 +40,6 @@ testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', ver
 - Na pasta lib - build.gradle, adicionar a dependencia.
 
 ## 6 - Trabalhando com Spring Framework
-![image](https://user-images.githubusercontent.com/54858003/199279607-4906f10f-3186-4fe6-9b3d-778d8a56fe72.png)
+- Slides: https://docs.google.com/presentation/d/1VfMegq5Je5qO4IP8chi2x4YR4ACOfBbN/edit#slide=id.p2
+  - ![image](https://user-images.githubusercontent.com/54858003/199279607-4906f10f-3186-4fe6-9b3d-778d8a56fe72.png)
 
