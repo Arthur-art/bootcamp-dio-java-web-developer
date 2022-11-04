@@ -1,5 +1,7 @@
 package dio.web.api.controller;
 
+import dio.web.api.handler.BusinessException;
+import dio.web.api.handler.CampoObrigatorioLogin;
 import dio.web.api.model.User;
 import dio.web.api.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,12 +21,18 @@ public class FirstController {
 
     @PostMapping("/create-user")
     public String createUser(@RequestBody User user){
-        User newUser = new User();
-        newUser.setLogin(user.getLogin());
-        newUser.setPassword(user.getPassword());
-        userRepository.save(newUser);
-
-        return "Usuario Cadastrado!";
+        if(user.getPassword() == null) throw new BusinessException("O campo password é obrigatorio.");
+        if(user.getLogin() == null) throw new CampoObrigatorioLogin("O campo login é obrigatorio.");
+        if(user.getId() == null){
+            User newUser = new User();
+            newUser.setLogin(user.getLogin());
+            newUser.setPassword(user.getPassword());
+            userRepository.save(newUser);
+            return "Usuario Cadastrado!";
+        }else{
+            updateUser(user);
+            return "Usuario atualizado!";
+        }
     }
 
     @GetMapping("/get-users")
