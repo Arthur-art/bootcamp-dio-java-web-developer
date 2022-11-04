@@ -12,12 +12,10 @@ public class UserController {
         return "Hello springboot.securityjwt";
     }
     @GetMapping("/users")
-    @PreAuthorize("hasAnyRole('MANAGERS','USERS')")
     public String users() {
         return "Authorized user";
     }
     @GetMapping("/managers")
-    @PreAuthorize("hasRole('MANAGERS')")
     public String managers() {
         return "Authorized manager";
     }
