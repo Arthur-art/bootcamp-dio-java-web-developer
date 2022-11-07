@@ -1,4 +1,4 @@
-package springboot.securityjwt;
+package springjwt.app.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -44,7 +44,7 @@ public class SwaggerConfig {
 
         docket
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("springboot.securityjwt"))
+                .apis(RequestHandlerSelectors.basePackage("springjwt.app.controller"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(this.informacoesApi().build())
@@ -54,3 +54,4 @@ public class SwaggerConfig {
         return docket;
     }
 }
+

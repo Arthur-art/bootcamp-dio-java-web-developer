@@ -1,4 +1,4 @@
-package springboot.securityjwt;
+package springboot.securityjwt.init;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
