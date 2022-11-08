@@ -1,4 +1,7 @@
 package me.dio.academia.digital.repository;
 
-public interface AvaliacaoFisicaRepository {
+import me.dio.academia.digital.models.AvaliacaoFisica;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AvaliacaoFisicaRepository extends JpaRepository<AvaliacaoFisica, Long> {
 }

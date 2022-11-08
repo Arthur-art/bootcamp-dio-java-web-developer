@@ -1,6 +1,7 @@
 package me.dio.academia.digital.controller;
 
 import me.dio.academia.digital.models.Aluno;
+import me.dio.academia.digital.models.AvaliacaoFisica;
 import me.dio.academia.digital.models.dtos.AlunoDto;
 import me.dio.academia.digital.service.impl.AlunoServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,5 +24,10 @@ public class AlunoController {
     @PostMapping("/create-aluno")
     public Aluno createAluno(@RequestBody AlunoDto aluno){
         return alunoService.create(aluno);
+    }
+
+    @GetMapping("/get-avaliacoes-aluno/{id}")
+    public List<AvaliacaoFisica> getAvaliacaoFisica(@PathVariable Long id){
+        return alunoService.getAllAvaliacaoFisica(id);
     }
 }

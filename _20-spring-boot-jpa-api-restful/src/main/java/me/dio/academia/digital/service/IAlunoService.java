@@ -1,6 +1,7 @@
 package me.dio.academia.digital.service;
 
 import me.dio.academia.digital.models.Aluno;
+import me.dio.academia.digital.models.AvaliacaoFisica;
 import me.dio.academia.digital.models.dtos.AlunoDto;
 import me.dio.academia.digital.models.dtos.AlunoUpdateDto;
 
@@ -41,4 +42,6 @@ public interface IAlunoService {
    * @param id - id do Aluno que será removido.
    */
   void delete(Long id);
+
+  List<AvaliacaoFisica> getAllAvaliacaoFisica(Long id);
 }
