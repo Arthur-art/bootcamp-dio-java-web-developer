@@ -7,6 +7,7 @@ import me.dio.academia.digital.service.impl.AlunoServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -22,7 +23,7 @@ public class AlunoController {
     }
 
     @PostMapping("/create-aluno")
-    public Aluno createAluno(@RequestBody AlunoDto aluno){
+    public Aluno createAluno(@Valid @RequestBody AlunoDto aluno){
         return alunoService.create(aluno);
     }
 

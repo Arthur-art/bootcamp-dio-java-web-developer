@@ -16,7 +16,7 @@ public class AvaliacaoFisicaController {
     AvaliacaoFisicaServiceImpl avaliacaoFisicaService;
 
     @GetMapping("/get-avaliacoes-fisicas")
-    public List<AvaliacaoFisica> getAvaliacoesFisicas(@RequestBody AvaliacaoFisicaDto avaliacaoFisica){
+    public List<AvaliacaoFisica> getAvaliacoesFisicas(){
         return avaliacaoFisicaService.getAll();
     }
 
