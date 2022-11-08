@@ -1,7 +1,9 @@
 package me.dio.academia.digital.models.dtos;
 
-import java.time.LocalDate;
+import lombok.Data;
 
+import java.time.LocalDate;
+@Data
 public class AlunoDto {
 
   private String nome;

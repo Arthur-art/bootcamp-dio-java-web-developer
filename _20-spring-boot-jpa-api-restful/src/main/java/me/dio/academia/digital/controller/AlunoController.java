@@ -1,9 +1,27 @@
 package me.dio.academia.digital.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import me.dio.academia.digital.models.Aluno;
+import me.dio.academia.digital.models.dtos.AlunoDto;
+import me.dio.academia.digital.service.impl.AlunoServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/alunos")
 public class AlunoController {
+
+    @Autowired
+    private AlunoServiceImpl alunoService;
+
+    @GetMapping("/get-alunos")
+    public List<Aluno> getAlunos(){
+      return alunoService.getAll();
+    }
+
+    @PostMapping("/create-aluno")
+    public Aluno createAluno(@RequestBody AlunoDto aluno){
+        return alunoService.create(aluno);
+    }
 }

@@ -1,4 +1,7 @@
 package me.dio.academia.digital.repository;
 
-public interface AlunoRepository {
+import me.dio.academia.digital.models.Aluno;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AlunoRepository extends JpaRepository<Aluno, Long> {
 }
