@@ -1,8 +1,8 @@
 package me.dio.academia.digital.service;
 
-import me.dio.academia.digital.entity.Aluno;
-import me.dio.academia.digital.entity.form.AlunoForm;
-import me.dio.academia.digital.entity.form.AlunoUpdateForm;
+import me.dio.academia.digital.models.Aluno;
+import me.dio.academia.digital.models.dtos.AlunoDto;
+import me.dio.academia.digital.models.dtos.AlunoUpdateDto;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ public interface IAlunoService {
    * @param form - formulário referente aos dados para criação de um Aluno no banco de dados.
    * @return - Aluno recém-criado.
    */
-  Aluno create(AlunoForm form);
+  Aluno create(AlunoDto form);
 
   /**
    * Retorna um Aluno que está no banco de dados de acordo com seu Id.
@@ -34,7 +34,7 @@ public interface IAlunoService {
    * no banco de dados.
    * @return - Aluno recém-atualizado.
    */
-  Aluno update(Long id, AlunoUpdateForm formUpdate);
+  Aluno update(Long id, AlunoUpdateDto formUpdate);
 
   /**
    * Deleta um Aluno específico.

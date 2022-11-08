@@ -1,8 +1,8 @@
-package me.dio.academia.digital.entity.form;
+package me.dio.academia.digital.models.dtos;
 
 import java.time.LocalDate;
 
-public class AlunoForm {
+public class AlunoDto {
 
   private String nome;
 
