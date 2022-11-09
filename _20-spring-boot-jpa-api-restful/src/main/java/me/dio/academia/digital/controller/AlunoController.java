@@ -31,4 +31,9 @@ public class AlunoController {
     public List<AvaliacaoFisica> getAvaliacaoFisica(@PathVariable Long id){
         return alunoService.getAllAvaliacaoFisica(id);
     }
+
+    @GetMapping
+    public List<Aluno> getAlunoByDateNasc(@RequestParam(value = "dataDeNascimento", required = false) String dataNascimento){
+        return alunoService.getAlunoByDateNasc(dataNascimento);
+    }
 }

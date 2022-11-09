@@ -44,4 +44,6 @@ public interface IAlunoService {
   void delete(Long id);
 
   List<AvaliacaoFisica> getAllAvaliacaoFisica(Long id);
+
+  List<Aluno> getAlunoByDateNasc(String dataNascimento);
 }

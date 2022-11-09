@@ -1,5 +1,6 @@
 package me.dio.academia.digital.service.impl;
 
+import me.dio.academia.digital.infra.utils.JavaTimeUtils;
 import me.dio.academia.digital.models.Aluno;
 import me.dio.academia.digital.models.AvaliacaoFisica;
 import me.dio.academia.digital.models.dtos.AlunoDto;
@@ -9,6 +10,7 @@ import me.dio.academia.digital.service.IAlunoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Service
@@ -53,5 +55,16 @@ public class AlunoServiceImpl implements IAlunoService {
     public List<AvaliacaoFisica> getAllAvaliacaoFisica(Long id) {
         Aluno aluno = alunoRepository.findById(id).get();
         return aluno.getAvaliacoes();
+    }
+
+    @Override
+    public List<Aluno> getAlunoByDateNasc(String dataNascimento) {
+        if(dataNascimento == null){
+            return alunoRepository.findAll();
+        }else{
+            LocalDate localDate = LocalDate.parse(dataNascimento, JavaTimeUtils.LOCAL_DATE_FORMATTER);
+            return alunoRepository.findByDataDeNascimento(localDate);
+        }
+
     }
 }
